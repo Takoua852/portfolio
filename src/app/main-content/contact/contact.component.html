@@ -1,0 +1,163 @@
+<section id="contact">
+    <div class="title-box">
+        <div class="line"></div>
+        <h1 class="title"> Contact</h1>
+    </div>
+    <div class="d-flex">
+        <div class="descriptionBox">
+            <div class="subtitle">Got a problem to solve?</div>
+            <div class="text">Contact me through this form, I am interested in hearing from you, knowing your ideas and
+                contributing
+                to your projects with my work.</div>
+            <p>Need a Frontend developer? <b> Contact me!</b> </p>
+        </div>
+        <!-- <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            
+            <div class="inputBox">
+                <input type="text" placeholder="Your name" formControlName="name" [ngClass]="{'input-error': contactForm.controls['name'].invalid && 
+                (contactForm.controls['name'].touched || contactForm.controls['name'].dirty), 
+                'input-control':contactForm.controls['name'].valid}" required>
+                <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].touched || contactForm.controls['name'].dirty)"
+                    [ngClass]="{'error-msg':contactForm.controls['name'].invalid && (contactForm.controls['name'].touched || contactForm.controls['name'].dirty)}">
+                    Your name is
+                    required</div>
+            </div>
+          
+            <div class="inputBox">
+                <input type="email" placeholder="Your email" formControlName="email" [ngClass]="{
+        'input-error': contactForm.controls['email'].invalid &&
+        (contactForm.controls['email'].touched || contactForm.controls['email'].dirty),
+        'input-control': contactForm.controls['email'].valid
+      }" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+                <div *ngIf="contactForm.controls['email'].invalid &&
+      (contactForm.controls['email'].touched || contactForm.controls['email'].dirty)" [ngClass]="{
+        'error-msg': contactForm.controls['email'].invalid &&
+        (contactForm.controls['email'].touched || contactForm.controls['email'].dirty)
+      }">
+                    Your email is required
+                </div>
+            </div>
+
+           
+            <div class="textareaBox">
+                <textarea name="" id="message" placeholder="Your message" formControlName="message" [ngClass]="{'textarea-error': contactForm.controls['message'].invalid && 
+            (contactForm.controls['message'].touched || contactForm.controls['message'].dirty), 
+            'textarea-control':contactForm.controls['message'].valid}" required>
+        </textarea>
+
+                <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].touched || contactForm.controls['message'].dirty)"
+                    [ngClass]="{'error-msg':contactForm.controls['message'].invalid && (contactForm.controls['message'].touched || contactForm.controls['message'].dirty)}">
+                    Your message is empty
+                </div>
+            </div>
+
+            <div class="checkbox-container">
+                <div class="input-checkBox">
+                    <input type="checkbox" name="" id="checkbox" formControlName="isAgree" required
+                        class="checkBox-style">
+                    <label for="checkbox" class="custom-checkbox"></label>
+                    <p>I've read the <a href="privacy-policy" target="_blank">privacy policy </a>and agree to the
+                        processing of my data as outlined.
+                    </p>
+                </div>
+
+                <div *ngIf="contactForm.controls['isAgree'].invalid && (contactForm.controls['isAgree'].touched || contactForm.controls['isAgree'].dirty)"
+                    [ngClass]="{'error-msg':contactForm.controls['isAgree'].invalid && (contactForm.controls['isAgree'].touched || contactForm.controls['isAgree'].dirty)}">
+                    Please accept the privacy policy
+                </div>
+
+
+            </div>
+            <button type="submit" [disabled]="contactForm.invalid" class="submitBtn"
+                [ngClass]="{ 'submitBtn-disabled': contactForm.invalid }">Send message </button>
+            <a href="#home" class="go-up"> <img src=".\assets\icons\Go up button.png" alt=""></a>
+
+
+        </form> -->
+
+
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <!-- name -->
+            <div class="inputBox">
+                <input #name="ngModel" type="text" placeholder="Your name" name="name" [(ngModel)]="contactData.name"
+                    [ngClass]="{
+                        'input-error': name.invalid && (name.touched || name.dirty),
+                        'input-control': name.valid && (name.touched || name.dirty)
+                    }" required minlength="4" required>
+                <div *ngIf="name.invalid && (name.touched || name.dirty)" class="error-msg">
+                    Your name is required
+                </div>
+            </div>
+
+            <!-- email -->
+
+            <div class="inputBox">
+                <input #email="ngModel" type="email" placeholder="Your email" name="email"
+                    [(ngModel)]="contactData.email" [ngClass]="{
+                        'input-error': email.invalid && (email.touched || email.dirty),
+                        'input-control': email.valid && (email.touched || email.dirty)
+                    }" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                <div *ngIf="email.invalid && (email.touched || email.dirty)" class="error-msg">
+                    Please enter a valid email address
+                </div>
+            </div>
+
+            <!-- message -->
+            <div class="textareaBox">
+                <textarea #message="ngModel" name="message" placeholder="Your message" [(ngModel)]="contactData.message"
+                    [ngClass]="{
+                    'textarea-error': message.invalid && (message.touched || message.dirty),
+                    'textarea-control': message.valid && (message.touched || message.dirty)
+                }" required minlength="4">
+            </textarea>
+
+                <div *ngIf="message.invalid && (message.touched || message.dirty)" class="error-msg">
+                    Please enter at least 4 characters
+                </div>
+            </div>
+
+            <!-- checkbox -->
+            <div class="checkbox-container">
+                <div class="input-checkBox">
+                    <input type="checkbox" id="checkbox" name="isAgree" [(ngModel)]="contactData.isAgree"
+                        #checkbox="ngModel" required class="checkBox-style">
+                    <label for="checkbox" class="custom-checkbox"></label>
+                    <p>I've read the <a href="./../../privacy-policy/" target="_blank">privacy policy </a>and agree to the
+                        processing of my data as outlined.
+                    </p>
+                </div>
+
+                <div *ngIf="checkbox.invalid && (checkbox.touched || checkbox.dirty)" class="error-msg">
+                    Please accept the privacy policy
+                </div>
+
+
+            </div>
+            <button type="submit" [disabled]="contactForm.invalid" class="submitBtn"
+                [ngClass]="{ 'submitBtn-disabled': contactForm.invalid }">
+                Send message
+            </button>
+
+            <a href="#home" class="go-up"> <img src=".\assets\icons\Go up button.png" alt=""></a>
+        </form>
+
+    </div>
+
+
+</section>
+
+
+<!-- email -->
+<!-- <div class="inputBox">
+                <input type="email" placeholder="Your email" formControlName="email" [ngClass]="{
+                           'input-error': contactForm.controls['email'].invalid && 
+                                         (contactForm.controls['email'].touched || contactForm.controls['email'].dirty), 
+                           'input-control':contactForm.controls['email'].valid }"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+
+                <div *ngIf="contactForm.controls['email'].invalid && 
+        (contactForm.controls['email'].touched || contactForm.controls['email'].dirty)" [ngClass]="{'error-msg':contactForm.controls['email'].invalid && 
+        (contactForm.controls['email'].touched || contactForm.controls['email'].dirty)}">
+                    Your email is required
+                </div>
+            </div> -->

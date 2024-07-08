@@ -1,0 +1,225 @@
+#portfolio {
+    background-image: url('./../../../assets/img/D. blue 2 P.png');
+    background-repeat: no-repeat;
+    background-position-x: -14%;
+    background-position-y: 15%;
+    background-size: 45%
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.first-line {
+    border: 3px solid rgba(75, 71, 255, 1);
+    border-radius: 5px 0 0 5px;
+    width: 109px;
+}
+
+.second-line {
+    border: 3px solid rgba(75, 71, 255, 1);
+    justify-self: end;
+    width: 30%;
+    right: 0;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+
+
+    .d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .project-description {
+        width: 500px;
+
+        .project-title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38.4px;
+            color: rgba(75, 71, 255, 1);
+        }
+
+        .untertitle {
+            color: rgba(0, 190, 232, 1);
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 27.6px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+        }
+    }
+
+    img {
+        width: 620px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.third-project {
+    background-image: url('./../../../assets/img/L. blue 2.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: contain;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    gap: 80px;
+
+    .btn-portfolio {
+        width: 152px;
+        height: 58px;
+        padding: 15px 30px;
+        gap: 10px;
+        border-radius: 10px;
+        background: rgba(75, 71, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        border: unset;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: left;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: rgba(0, 190, 232, 1);
+        }
+    }
+
+    .scd-btn {
+        width: 137px;
+        height: 58px;
+        padding: 15px 30px;
+        gap: 10px;
+        border-radius: 10px;
+        border: unset;
+        background-color: transparent;
+        color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 190, 232, 1);
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27.6px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: rgba(0, 190, 232, 1);
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .projects-container {
+        img {
+            width: 50%;
+        }
+
+        .project-description {
+            width: auto;
+            padding: 8px;
+
+            .untertitle {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .buttonBox {
+        gap: 16px;
+
+        .btn-portfolio {
+            width: 135px;
+            font-size: 18px;
+        }
+
+        .scd-btn {
+            width: 111px;
+           
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .title-box {
+        gap: 8px;
+    }
+
+    .first-line {
+        width: 20px;
+    }
+
+    .second-line {
+        width: 10%;
+    }
+
+    p {
+        padding: 6px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .projects-container {
+        img {
+            width: 100%;
+        }
+
+        .project-description {
+            width: auto;
+            align-self: center;
+            margin-top: -90px;
+
+            .project-title,
+            .untertitle {
+                text-align: center;
+            }
+        }
+    }
+
+    .first-project,
+    .third-project {
+        flex-direction: column;
+    }
+
+    .buttonBox {
+        justify-content: center;
+        gap: 16px;
+        .scd-btn{
+            padding: 0;
+        }
+    }
+
+    .second-project {
+        flex-direction: column-reverse;
+    }
+
+    #portfolio {
+        background-position-x: 100%;
+        background-position-y: -16%;
+        background-size: auto;
+    }
+}

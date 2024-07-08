@@ -1,0 +1,138 @@
+#about {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    height: 100%;
+    gap: 50px;
+    align-items: center;
+    background-image: url('./../../../assets/img/D. blue 1 A.M.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutme-content {
+    text-align: justify;
+    align-items: center;
+    width: 470px;
+
+    .aboutmeInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
+        margin: 20px;
+    }
+
+    img {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+    }
+}
+
+.aboutme-imageBox {
+    img {
+        border: 4px solid rgba(0, 190, 232, 1);
+        border-radius: 50%;
+        object-fit: contain;
+        width: 453px;
+        height: 453px;
+    }
+
+    .line {
+        width: 267px;
+        border: 2px solid rgba(0, 190, 232, 1);
+    }
+}
+
+.aboutmeBox {
+    width: 50%;
+    margin-left: 100px;
+}
+
+.imageBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//responsive///
+@media screen and (max-width: 1080px) {
+    .aboutme-imageBox {
+        img {
+            width: 350px;
+            height: 350px;
+        }
+    }
+    .aboutmeBox {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #about {
+        flex-direction: column;
+        padding: 200px 0;
+    }
+
+    .aboutmeBox {
+        width: 100%;
+    }
+
+    .aboutme-imageBox {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #about {
+        padding: 100px 0;
+    }
+    .aboutmeBox {
+        margin-left: 8px;
+        width: auto;
+    }
+    .aboutme-content {
+        margin: 20px;
+        width: auto;
+    }
+    .aboutme-imageBox {
+        width: 100%;
+    }
+    .imageBox {
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+   
+    .aboutme-imageBox {
+        display: none;
+    }
+    .aboutme-content{
+        font-size: 14px;
+        width: auto;
+        padding: 8px;
+
+    }
+    #about{
+        padding: 0;
+        height: auto;
+    }
+    .m-l{
+        padding-left: 8px;
+    }
+    .aboutmeInfo{
+        gap: 16px;
+        margin:16px 0;
+    }
+}

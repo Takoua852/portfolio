@@ -1,0 +1,23 @@
+.impressum{
+    height: 100%;
+    padding: 50px;
+    width: auto;
+    overflow-y: scroll;
+    scrollbar-width:thin;
+    scrollbar-color: rgba(0, 190, 232, 1) transparent;
+    box-sizing: border-box;
+    background-image: url('./../../assets/img/blur Shapes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+}
+a {
+    text-decoration: none;
+    color: rgba(0, 190, 232, 1)
+}
+
+@media screen and (max-width:750px) {
+    .impressum {
+        padding: 16px;
+        font-size: 12px;
+    }}

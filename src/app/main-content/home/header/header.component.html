@@ -1,0 +1,25 @@
+<div class="header">
+    <div class="h-logo">
+        <a href="#home">
+            <div class="logo">Ta |
+                <img src=".\assets\img\letterK.png" class="k-letter">oua<span
+                    style="color: rgba(75, 71, 255, 1);">.</span>
+            </div>
+        </a>
+
+        <div class="burger-menu" (click)="toggleMenu()">
+            <div [ngClass]="{'line1': true, 'open': menuOpen}"></div>
+            <div [ngClass]="{'line2': true, 'open': menuOpen}"></div>
+            <div [ngClass]="{'line3': true, 'open': menuOpen}"></div>
+        </div>
+    </div>
+ 
+    <nav [ngClass]="{'open': menuOpen}">
+        <a href="#about" [ngClass]="{'active': activeLink === 'about'}" (click)="setActiveLink('about')">About me</a>
+        <a href="#skills" [ngClass]="{'active': activeLink === 'skills'}" (click)="setActiveLink('skills')">Skills</a>
+        <a href="#portfolio" [ngClass]="{'active': activeLink === 'portfolio'}"
+            (click)="setActiveLink('portfolio')">Portfolio</a>
+        <a href="#contact" [ngClass]="{'active': activeLink === 'contact'}"
+            (click)="setActiveLink('contact')">Contact</a>
+    </nav>
+</div>
