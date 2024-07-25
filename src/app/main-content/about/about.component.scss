@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
-    height: 100%;
+    height: auto;
     gap: 50px;
     align-items: center;
     background-image: url('./../../../assets/img/D. blue 1 A.M.png');
@@ -39,6 +39,7 @@
 }
 
 .aboutme-imageBox {
+
     img {
         border: 4px solid rgba(0, 190, 232, 1);
         border-radius: 50%;

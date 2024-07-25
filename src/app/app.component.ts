@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MainContentComponent } from './main-content/main-content.component';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-root',
@@ -12,13 +16,36 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   imports: [CommonModule,
-            RouterOutlet,
-            MainContentComponent, 
-            ImpressumComponent, 
-            PrivacyPolicyComponent,
-            FooterComponent
-  ]
+    RouterOutlet,
+    MainContentComponent,
+    ImpressumComponent,
+    PrivacyPolicyComponent,
+    FooterComponent]
 })
-export class AppComponent {
+
+export class AppComponent  implements OnInit {
   title = 'Portfolio';
+  
+  constructor(private responsive: BreakpointObserver) { }
+
+  isPhoneLandscape = false;
+
+  ngOnInit() {
+    this.responsive.observe(Breakpoints.HandsetLandscape)
+      .subscribe(result => {
+        this.isPhoneLandscape = result.matches;
+      });
+
+      AOS.init({
+        duration: 1200,
+        once: false, // Animation bei jedem Scrollen ausführen
+        mirror: true // Animation beim Scrollen zurück ausführen
+      });
+  }
+ 
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: Event) {
+    AOS.refresh(); // Aktualisiere AOS beim Scrollen
+  }
 }
+

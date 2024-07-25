@@ -1,0 +1,48 @@
+{
+    "header": {
+        "ABOUT_TITLE": "Über mich",
+        "Skills": "Fähigkeiten",
+        "Contact": "Kontakt",
+        "ABOUT_DESCRIPTION": "Das ist eine Beschreibung über mich."
+    },
+    "Home": {
+        "Iam": "Ich bin",
+        "Frontend": "Frontend Entwickler",
+        "talk": "Lass uns reden",
+        "scroll": "runterscrollen"
+    },
+    "about": {
+        "about_title": "Über mich",
+        "about_content": "Hallo! Ich bin Takoua, eine leidenschaftliche Front-End-Entwicklerin mit einem ausgeprägten Sinn für Design und einem Talent für die Schaffung nahtloser Benutzererfahrungen. Mit einer soliden Grundlage in HTML, CSS und JavaScript spezialisiere ich mich auf die Entwicklung von responsiven, benutzerfreundlichen Websites und Webanwendungen.",
+        "innovative": "Ich blühe auf, wenn ich frische, innovative Ideen einbringe, die jedem Projekt Mehrwert verleihen. Meine Herangehensweise an Problemlösungen ist einzigartig, und ich sorge dafür, dass die Projekte, an denen ich arbeite, nicht nur funktional, sondern auch außergewöhnlich fesselnd und ansprechend sind.",
+        "creative": "Ich ziehe immense Zufriedenheit daraus, komplexe Herausforderungen anzunehmen, meine ausgeprägten analytischen Fähigkeiten zu nutzen und mit akribischer Detailgenauigkeit Probleme zu zerlegen. Diese Herangehensweise ermöglicht es mir, stets qualitativ hochwertige und wirkungsvolle Ergebnisse zu liefern."
+    },
+    "skills": {
+        "description": "Ich habe meine Fähigkeiten in der Frontend-Entwicklung weiter ausgebaut, wodurch ich in der Lage bin, verschiedene reale Projekte zu erstellen.",
+        "btn": "mehr erfahren"
+    },
+    "portfolio": {
+        "desc": "Entdecken Sie eine Auswahl meiner Arbeiten hier – Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "join": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "polo_loco": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+        "pokedex": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+    },
+    "contact": {
+        "title":"Kontakt",
+        "subtitle": "Haben Sie ein Problem, das gelöst werden muss?",
+        "text": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "help":"Brauchen Sie einen Frontend-Entwickler?",
+        "bold":"Kontaktieren Sie mich!",
+        "send":"Nachricht senden!",
+        "p":"Ich habe die",
+        "agree":"und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "mail_error":"Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "err_name":"Ihr Name ist erforderlich",
+        "msg_error":"Bitte geben Sie mindestens 4 Zeichen ein."
+    },
+    "form":{
+        "name":"Dein name",
+        "email":"Deine Email",
+        "message":"Dein nachricht"
+    }
+}

@@ -1,0 +1,23 @@
+.phone-portrait-hint {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isPhoneLandscape {
+  display: none;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Landscape mode styles */

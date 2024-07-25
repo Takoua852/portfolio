@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" >
     <div class="h-logo">
         <a href="#home">
             <div class="logo">Ta |
@@ -13,13 +13,19 @@
             <div [ngClass]="{'line3': true, 'open': menuOpen}"></div>
         </div>
     </div>
- 
+
     <nav [ngClass]="{'open': menuOpen}">
-        <a href="#about" [ngClass]="{'active': activeLink === 'about'}" (click)="setActiveLink('about')">About me</a>
-        <a href="#skills" [ngClass]="{'active': activeLink === 'skills'}" (click)="setActiveLink('skills')">Skills</a>
+        <a href="#about" [ngClass]="{'active': activeLink === 'about'}"
+            (click)="setActiveLink('about')">{{"header.ABOUT_TITLE" | translate}}</a>
+        <a href="#skills" [ngClass]="{'active': activeLink === 'skills'}"
+            (click)="setActiveLink('skills')">{{"header.Skills" | translate}}</a>
         <a href="#portfolio" [ngClass]="{'active': activeLink === 'portfolio'}"
             (click)="setActiveLink('portfolio')">Portfolio</a>
         <a href="#contact" [ngClass]="{'active': activeLink === 'contact'}"
-            (click)="setActiveLink('contact')">Contact</a>
+            (click)="setActiveLink('contact')">{{"header.Contact" | translate}}</a>
+        <div style="display: flex;align-items: center;gap: 16px;">
+            <img (click)="switchLanguage('en')" (click)="setActiveLink('en')" [ngClass]="{'active': activeLink === 'en'}" src='./assets/icons/vereinigte-staaten.png' width="35px;">
+            <img (click)="switchLanguage('de')" (click)="setActiveLink('de')" [ngClass]="{'active': activeLink === 'de'}" src="./assets/icons/deutschland.png" width="35px;">
+        </div>
     </nav>
 </div>

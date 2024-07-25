@@ -1,23 +1,36 @@
 html,
 body {
-  height: 100%;
+  min-height: 2000px;
   width: 100%;
   padding: 0;
-  margin: 0;
   font-family: 'Poppins';
   color: #fff;
   scroll-behavior: smooth;
   background-color: rgb(34, 45, 67);
   scrollbar-width: thin;
   scrollbar-color: rgb(75, 71, 255) transparent;
-  overflow-x:hidden ;
+  overflow-x: hidden;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .title {
-  font-size: 90px;
+  font-size: 84px;
   font-weight: 700;
   line-height: 108px;
 }
+/* app.component.css */
+
+
+@media (max-width: 959.98px) and (orientation: landscape) {
+  html,body {
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
 
 ///responsive
 @media screen and (max-width:950px) {
@@ -31,9 +44,8 @@ body {
     font-size: 54px;
     line-height: 77px;
   }
-  
-}
 
+}
 
 
 /* poppins-300 - latin */
@@ -189,3 +201,5 @@ body {
   src: url('./assets/fonts/poppins-v21-latin-900italic.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+@import 'aos/dist/aos.css';

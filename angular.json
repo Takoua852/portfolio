@@ -4,6 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "my-portfolio": {
+     
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -26,13 +27,20 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "aos.css",
+                "input": "src/assets/css",
+                "output": "/assets/css"
+              }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "aos"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,9 +98,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+            
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ]
           }
         }
       }

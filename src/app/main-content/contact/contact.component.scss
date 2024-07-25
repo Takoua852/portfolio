@@ -1,5 +1,5 @@
 #contact {
-    height: 100%;
+    height: auto;
     background-image: url('./../../../assets/img/D. blue 3 footer.png');
     background-repeat: no-repeat;
     background-position-y: 200%;
@@ -12,12 +12,14 @@
 }
 
 .descriptionBox {
-   
+
     padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
     p {
         width: 473px;
-        height: 19px;
         gap: 0px;
         opacity: 0px;
         font-size: 16px;
@@ -43,7 +45,7 @@
 .subtitle {
     color: #fff;
     width: 473px;
-    height: 38px;
+    
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
@@ -52,7 +54,7 @@
 
 .text {
     width: 473px;
-    height: 57px;
+   
     font-size: 16px;
     font-weight: 400;
     line-height: 19.2px;
@@ -63,11 +65,11 @@
 form {
     display: flex;
     flex-direction: column;
-    padding: 15px 25px;
+    padding-bottom: 150px;
     gap: 32px;
     width: 617px;
     height: 504px;
-padding-right: 70px;
+    padding-right: 70px;
 }
 
 input {
@@ -222,8 +224,8 @@ textarea {
 .submitBtn {
     width: 250px;
     height: 58px;
-    padding: 15px 30px;
-    gap: 10px;
+    padding: 15px ;
+   
     border-radius: 10px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #fff;
@@ -233,6 +235,7 @@ textarea {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     align-self: center;
     cursor: pointer;
     background: rgba(0, 190, 232, 1);
@@ -269,71 +272,90 @@ textarea {
     }
 }
 
-@media screen and (max-width: 950px){
-    form{
+@media screen and (max-width: 950px) {
+    form {
         padding: 0 30px 0 0;
         gap: 16px;
         width: 50%;
         height: auto;
     }
-    .d-flex{
+
+    .d-flex {
         gap: 16px;
     }
-    .descriptionBox{
+
+    .descriptionBox {
         width: 50%;
-        .subtitle{
+
+        .subtitle {
             width: auto;
             height: auto;
             font-size: 28px;
         }
-        .text, p{
+
+        .text,
+        p {
             width: auto;
             height: auto;
             font-size: 16px;
         }
-      
+
     }
-} 
-@media screen and (max-width: 780px){
-    .line{
+}
+
+@media screen and (max-width: 780px) {
+    .line {
         width: 30px;
     }
-    .title-box{
+
+    .title-box {
         gap: 8px;
     }
-    .descriptionBox{
+
+    .descriptionBox {
         padding-left: 38px;
     }
 }
-@media screen and (max-width: 580px){
-    .d-flex{
+
+@media screen and (max-width: 580px) {
+    .d-flex {
         flex-direction: column;
         padding: 30px;
         align-items: center;
     }
-    .descriptionBox{
+
+    .descriptionBox {
         width: 100%;
         padding-left: 0;
     }
-    form{
+
+    form {
         width: 100%;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 24px;
     }
-    .text{
+
+    .text {
         font-size: 14px;
     }
-    #contact{
+
+    #contact {
         height: auto;
     }
-    .submitBtn:hover{
-        transform: scale(1.1);
+
+    .submitBtn:hover {
+        transform: scale(0.8);
     }
-    form{
-        padding: 0;
+
+    form {
+        padding: 0 15px 0 0;
     }
- .input-checkBox{p{
-    font-size: 12px;
- }}
+
+    .input-checkBox {
+        p {
+            font-size: 12px;
+        }
+    }
 }

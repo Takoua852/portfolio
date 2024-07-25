@@ -1,0 +1,48 @@
+{
+    "header": {
+        "ABOUT_TITLE": "About me",
+        "Skills": "skills",
+        "Contact": "Contact",
+        "ABOUT_DESCRIPTION": "this is a description about me"
+    },
+    "Home": {
+        "Iam": "I am",
+        "Frontend": "Frontend developer",
+        "talk": "Let's talk",
+        "scroll": "scroll down"
+    },
+    "about": {
+        "about_title": "About me",
+        "about_content": "Hello! I'am Takoua, a passionate Front End Developer with a keen eye for design and knack for crafting seamless use experiences. With a strong foundation in HTML, CSS and JavaScript, I specialize in building  responsive, user-friendly websites and web applications.",
+        "innovative": "I thrive on introducing fresh, innovative ideas that bring value to every project. I approach problem-solving uniquely, ensuring that the projects I work on are not only functional but also exceptionally captivating and engaging.",
+        "creative": "I derive immense satisfaction from taking on complex challenges, utilizing my sharp analytical skills, and deploying a meticulous attention to detail to deconstruct problems. This approach allows me to consistently deliver high-quality, impactful results."
+    },
+    "skills": {
+        "description": "I have grown my frontend developments skills that have allowed me to create different real projects.",
+        "btn": "Get in touch"
+    },
+    "portfolio": {
+        "desc": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "polo_loco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Got a problem to solve?",
+        "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "help": "Need a Frontend developer?",
+        "bold": "Contact me!",
+        "send": "Send message",
+        "p": "I've read the",
+        "agree": "and agree to the processing of my data as outlined.",
+        "mail_error": "Please enter a valid email address",
+        "err_name": "Your name is required",
+        "msg_error": "Please enter at least 4 characters"
+    },
+    "form": {
+        "name": "Your name",
+        "email": "Your email",
+        "message": "Your message"
+    }
+}
