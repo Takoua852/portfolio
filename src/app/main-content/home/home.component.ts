@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from '../../shared/components/header/header.component';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 

@@ -1,16 +1,14 @@
 .privacy-policy {
-    min-height: 2000px;
+
     padding: 50px;
     width: auto;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 190, 232, 1) transparent;
     box-sizing: border-box;
     background-image: url('./../../assets/img/blur Shapes.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
- 
+    padding-top: 200px;
+    min-height: 1200px;
 }
 
 a {
@@ -21,22 +19,15 @@ a {
 @media screen and (max-width:750px) {
     .privacy-policy {
         padding: 16px;
-        font-size: 12px;
+        padding-top: 150px;
     }
 
     a {
         display: inline-block;
-        max-width: 200px;
+       width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    h1{
-        font-size: 24px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    h3{
-        font-size: 12px;
-    }
+
+   
 }

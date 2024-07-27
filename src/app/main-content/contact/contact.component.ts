@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject} from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -13,8 +13,8 @@ import { TranslateModule } from '@ngx-translate/core';
 }
 )
 
-export class ContactComponent  {
- 
+export class ContactComponent {
+
   http = inject(HttpClient);
 
   post = {
@@ -41,7 +41,8 @@ export class ContactComponent  {
         .subscribe(
           {
             next: (resp) => {
-              alert('Your email has been sent successfully!')
+              this.showPopup();
+              // alert('Your email has been sent successfully!')
               ngForm.resetForm();
             },
             error: (err) => {
@@ -52,7 +53,20 @@ export class ContactComponent  {
         );
     }
   }
+  showPopup() {
+    const popup = document.getElementById('customPopup');
+    if (popup) {
+      popup.style.display = 'block';
+    }
+  }
+  closePopup() {
+    const popup = document.getElementById('customPopup');
+    if (popup) {
+      popup.style.display = 'none';
+    }
+  }
 }
+
 
 
 
