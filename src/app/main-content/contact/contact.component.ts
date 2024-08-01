@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, FormsModule, TranslateModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule, TranslateModule,RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 }
@@ -65,6 +66,11 @@ export class ContactComponent {
       popup.style.display = 'none';
     }
   }
+
+  scrollToTop(){window.scrollTo({
+    top: 0,
+    behavior: 'smooth' 
+  });}
 }
 
 

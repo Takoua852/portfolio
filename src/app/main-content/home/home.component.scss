@@ -1,40 +1,33 @@
 #home {
     display: flex;
     align-items: center;
-    background-image: url('./../../../assets/img/shapepage.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: auto;
     width: 100%;
-    background-color: rgb(34, 45, 67);
-    background-position-y: 100%;
     padding: 120px 0;
 }
 
-.profileBildBox {
 
+.profileBildBox {
     background-image: url('./../../../assets/img/Photo shadows.png');
-    background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     width: 50%;
-    border-radius: 30%;
-
     img {
-        border-radius: 10%;
+        border-radius: 30%;
         width: 50%;
     }
 }
 
- .presentation {
+.presentation {
 
     display: flex;
     align-items: center;
     justify-content: center;
     padding-right: 20px;
-   width: 100%;
+    width: 100%;
+    z-index: 1;
 
     .iam {
         transform: rotate(-90deg);
@@ -43,13 +36,11 @@
         display: flex;
         align-items: baseline;
         justify-content: center;
-        width:  auto;
+        width: auto;
     }
-
 }
 
-
- .name {
+.name {
     font-size: 65px;
     font-weight: 700;
 }
@@ -74,6 +65,7 @@ button {
     border: unset;
     margin-top: 50px;
     transition: all 0.2s ease;
+
 
     &:hover {
         background-color: rgb(75, 71, 255);
@@ -109,10 +101,15 @@ button {
     animation: mymove 3s linear infinite alternate;
 }
 
+.email {
+    z-index: 1;
+}
+
 @keyframes mymove {
     from {
         top: -100px;
     }
+
     to {
         top: 0px;
     }
@@ -139,7 +136,7 @@ button {
         }
     }
 
-    .scrollBtn{
+    .scrollBtn {
         margin-right: 10px;
     }
 }
@@ -167,7 +164,8 @@ button {
             width: 75px;
         }
     }
-    .presentation{
+
+    .presentation {
         padding-top: 35px;
     }
 }
@@ -184,7 +182,7 @@ button {
 
     .presentation {
         .iam {
-            font-size: 30px;
+            font-size: 20px;
         }
     }
 
@@ -203,9 +201,5 @@ button {
         font-size: 19px;
     }
 
-    .presentation {
-        .iam {
-            font-size: 24px;
-        }
-    }
+
 }

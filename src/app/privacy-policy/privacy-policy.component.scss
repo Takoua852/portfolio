@@ -3,12 +3,9 @@
     padding: 50px;
     width: auto;
     box-sizing: border-box;
-    background-image: url('./../../assets/img/blur Shapes.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: local;
     padding-top: 200px;
     min-height: 1200px;
+    font-size: 12px;
 }
 
 a {
@@ -24,10 +21,10 @@ a {
 
     a {
         display: inline-block;
-       width: 100%;
+        width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
-   
+
 }

@@ -96,9 +96,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+            
             ],
             "styles": [
-            
               "src/styles.scss",
               "node_modules/aos/dist/aos.css"
             ],

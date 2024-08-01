@@ -1,23 +1,44 @@
-.phone-portrait-hint {
-  color: white;
-  padding: 10px;
-  text-align: center;
-  display: block;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.isPhoneLandscape {
-  display: none;
-  overflow: hidden;
-}
 
 .hidden {
   display: none;
 }
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box; 
 
+}
 /* Landscape mode styles */
+@media (max-width: 1920px) {
+  .container {
+    max-width:1920px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px; 
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 959px) and (orientation: landscape){
+  .phone-portrait-hint {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: rgb(34, 45, 67);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

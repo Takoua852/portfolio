@@ -1,9 +1,9 @@
-<div [ngClass]="{'isPhoneLandscape': isPhoneLandscape}">
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
-  </div>
-  
-  <div [ngClass]="{'phone-portrait-hint': isPhoneLandscape, 'hidden': !isPhoneLandscape}" >
-    You are in landscape mode on a mobile device
-  </div>
-  
+<app-header></app-header>
+<div class="container" >
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+<hr style=" border: 3px solid rgba(0, 190, 232, 1); width: 100vw;position: relative;bottom: 300px;">
+<div [ngClass]="{'phone-portrait-hint': isPhoneLandscape, 'hidden': !isPhoneLandscape}">
+  You are in landscape mode on a mobile device
+</div>

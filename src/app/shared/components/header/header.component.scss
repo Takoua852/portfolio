@@ -5,10 +5,10 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 1;
-    background-color: rgba(20, 29, 47, 1);
-    max-width: 1920px;
+    z-index: 999;
+    background-color: rgb(34, 45, 67);
     width: 100%;
+
 }
 
 .k-letter {
@@ -178,7 +178,7 @@ img {
 }
 
 ///// mobile ////
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     .logo {
         font-size: 32px;
         padding-left: 8px;
@@ -208,7 +208,7 @@ img {
 
     .burger-menu {
         display: flex;
-        padding-right: 10px;
+        padding-right: 20px;
     }
 
     .h-logo {

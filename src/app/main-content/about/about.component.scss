@@ -6,7 +6,7 @@
     height: auto;
     gap: 50px;
     align-items: center;
-    background-image: url('./../../../assets/img/D. blue 1 A.M.png');
+    // background-image: url('./../../../assets/img/D. blue 1 A.M.png');
     background-repeat: no-repeat;
     background-position-x: 100%;
 }
@@ -113,7 +113,9 @@
 }
 
 @media screen and (max-width: 450px) {
-   
+   #about{
+    padding-bottom: 0;
+   }
     .aboutme-imageBox {
         display: none;
     }
