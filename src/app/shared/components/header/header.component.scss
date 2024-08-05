@@ -1,14 +1,19 @@
+#header{
+    width: 100vw;
+    background-color: rgb(34, 45, 67);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
 .header {
     height: 109px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
     z-index: 999;
     background-color: rgb(34, 45, 67);
-    width: 100%;
-
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .k-letter {
@@ -171,7 +176,8 @@ img {
         font-size: 18px;
         padding-right: 8px;
     }
-    .header{
+
+    .header {
         flex-direction: column;
         justify-content: center;
     }
@@ -218,5 +224,5 @@ img {
         width: 100%;
         padding: 0 20px;
     }
-    
+
 }

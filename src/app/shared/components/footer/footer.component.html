@@ -4,8 +4,9 @@
             <a href="#home" class="home">Ta|<img src=".\assets\img\letterK.png" class="k-letter">oua.</a>
             <!-- <a href="./../../impressum/" class="imprint">Impressum</a> -->
        
-            <a routerLink="/impressum" class="imprint" (click)="scrollToTop()">{{"footer"|translate}}</a>
-        
+            <!-- <a routerLink="/impressum" class="imprint" (click)="scrollToTop()" >{{"footer"|translate}}</a> -->
+            <a [routerLink]="['/impressum']" class="imprint" (click)="scrollToTop()" >{{"footer"|translate}}</a>
+         
         </div>
         <div class="copyright">&copy; Takoua Jelassi 2024</div>
 

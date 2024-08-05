@@ -6,22 +6,21 @@
     padding: 120px 0;
 }
 
-
-.profileBildBox {
-    background-image: url('./../../../assets/img/Photo shadows.png');
-    background-position: center;
-    background-size: cover;
+.profileBildBox{
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 50%;
-    img {
-        border-radius: 30%;
-        width: 50%;
+    z-index: 22;
+    .photoShadow{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        transform: rotate(-90deg);
     }
 }
-
 .presentation {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,8 +64,6 @@ button {
     border: unset;
     margin-top: 50px;
     transition: all 0.2s ease;
-
-
     &:hover {
         background-color: rgb(75, 71, 255);
         transform: scale(1.2);
@@ -100,7 +97,6 @@ button {
     position: relative;
     animation: mymove 3s linear infinite alternate;
 }
-
 .email {
     z-index: 1;
 }
@@ -114,7 +110,6 @@ button {
         top: 0px;
     }
 }
-
 .email {
     text-decoration: none;
     color: #fff;
@@ -148,15 +143,10 @@ button {
         height: auto;
     }
 
-    .profileBildBox {
-        width: 100%;
-    }
-
     .scrollBtn {
         margin-right: 0;
         font-size: 16px;
     }
-
     .contactLinks {
         gap: 16px;
 
@@ -164,7 +154,6 @@ button {
             width: 75px;
         }
     }
-
     .presentation {
         padding-top: 35px;
     }
@@ -175,7 +164,6 @@ button {
     .name {
         font-size: 34px;
     }
-
     .profession {
         font-size: 25px;
     }
@@ -185,13 +173,11 @@ button {
             font-size: 20px;
         }
     }
-
     .scrollBtn,
     .email {
         display: none;
     }
 }
-
 @media screen and (max-width: 350px) {
     .name {
         font-size: 26px;
@@ -200,6 +186,5 @@ button {
     .profession {
         font-size: 19px;
     }
-
 
 }

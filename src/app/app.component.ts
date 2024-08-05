@@ -1,10 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { RouterLink, RouterModule } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { MainContentComponent } from './main-content/main-content.component';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { ImpressumComponent } from './impressum/impressum.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 import AOS from "aos";
@@ -17,10 +15,8 @@ import { HeaderComponent } from "./shared/components/header/header.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   imports: [CommonModule,
-    RouterLink, RouterModule, HeaderComponent,
+    RouterLink, RouterOutlet, HeaderComponent,
     MainContentComponent,
-    ImpressumComponent,
-    PrivacyPolicyComponent,
     FooterComponent, HeaderComponent]
 })
 

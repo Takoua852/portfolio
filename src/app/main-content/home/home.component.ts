@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../shared/components/header/header.component';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -12,8 +11,4 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent  {
-
-
-
-
 }
